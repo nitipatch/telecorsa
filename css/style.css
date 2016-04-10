@@ -1,0 +1,371 @@
+/* ============================================================
+  NAVIGATION
+============================================================ */
+nav ul {
+  list-style-type: none;
+  margin: 0 0 30px 0;
+  padding: 0;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+nav ul li a {
+  display: block;
+  padding: 5px 20px;
+  color: #fff;
+  background-color: #32c896;
+}
+nav ul li a:hover {
+  color: #fff;
+  background-color: #238b68;
+}
+nav ul li a.active {
+  color: #fff;
+  background-color: #238b68;
+}
+
+/* ============================================================
+  GLOBAL
+============================================================ */
+.effects {
+  /* float: left; */
+  width: 100%;
+  /* padding-left: 15px; */
+  height: 420px;
+}
+.effects .img1 {
+  position: relative;
+  float: left;
+  padding: 0;
+  margin: 0;
+  /* margin-bottom: 0px; */
+  width: 50%;
+  overflow: hidden;
+  height:100%;
+}
+
+
+
+.effects .img {
+  position: relative;
+  float: left;
+  padding: 0;
+  margin: 0;
+  /* margin-bottom: 5px; */
+  width: 25%;
+  overflow: hidden;
+  height:50%;
+}
+.effects .img:nth-child(n) {
+  margin-right: 1px;
+}
+.effects .img:first-child {
+  margin-left: -3px;
+}
+.effects .img:last-child {
+  margin-right: 0;
+}
+.effects .img img {
+  display: block;
+  margin: 0;
+  float: left;
+  padding: 0;
+  /* max-width: 100%; */
+  min-width: 100%;
+  min-height: 100%;
+  height: auto;
+}
+.expand .img img {
+  margin: 0;
+  padding: 0;
+  max-width:none;
+  width:auto;
+  height: auto;
+}
+
+
+.overlay {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+a.close-overlay {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  z-index: 100;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 45px;
+  text-align: center;
+  background-color: #000;
+  cursor: pointer;
+}
+a.close-overlay.hidden {
+  display: none;
+}
+.expand {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
+  width: 98%;
+  height: auto;
+  /* border: solid 5px #fff; */
+  text-align: left;
+  padding:0 10px;
+  color: #fff;
+  /* line-height: 50px; */
+  font-weight: 700;
+  font-size: 40px;
+  /* -webkit-border-radius: 30px; */
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  /* border-radius: 30px; */
+}
+.expand a{
+	color:#FFF;
+
+}
+.expandmedium a{
+	color:#FFF;
+}
+.expandsmall a{
+	color:#FFF;
+}
+
+a.expand {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
+  width: 98%;
+  height: auto;
+  /* border: solid 5px #fff; */
+  text-align: left;
+  padding:0 10px;
+  color: #fff;
+  /* line-height: 50px; */
+  font-weight: 700;
+  font-size: 30px;
+  /* -webkit-border-radius: 30px; */
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  /* border-radius: 30px; */
+}
+.expandmedium {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
+  width: 98%;
+  height: auto;
+  /* border: solid 5px #fff; */
+  text-align: left;
+  padding:0 10px;
+  color: #fff;
+  /* line-height: 50px; */
+  font-weight: 700;
+  font-size: 25px;
+  /* -webkit-border-radius: 30px; */
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  /* border-radius: 30px; */
+}
+.expandsmall {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
+  width: 98%;
+  height: auto;
+  /* border: solid 5px #fff; */
+  text-align: left;
+  padding:0 10px;
+  color: #fff;
+  /* line-height: 50px; */
+  font-weight: 700;
+  font-size: 20px;
+  /* -webkit-border-radius: 30px; */
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  /* border-radius: 30px; */
+}
+
+
+
+/* ============================================================
+  EFFECT 6 - ICON BOUNCE IN
+============================================================ */
+#effect-6 .overlay {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.8;
+}
+#effect-6 .overlay .expand{
+  left: 0;
+  width: 90%;
+  right: 0;
+  bottom: -27px;
+  padding: 0;
+  margin: 0 auto;
+  opacity: 1;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#effect-6 .overlay a.expand{
+  left: 0;
+  width: 90%;
+  right: 0;
+  bottom: -27px;
+  padding: 0;
+  margin: 0 auto;
+  opacity: 1;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#effect-6 .overlay .expandsmall{
+  left: 0;
+  width: 90%;
+  right: 0;
+  bottom: -27px;
+  padding: 0;
+  margin: 0 auto;
+  opacity: 1;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#effect-6 .overlay .expandmedium{
+  left: 0;
+  width: 90%;
+  right: 0;
+  bottom: -27px;
+  padding: 0;
+  margin: 0 auto;
+  opacity: 1;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#effect-6 .img.hover .overlay {
+  opacity: 1;
+}
+#effect-6 .img.hover .overlay .expand {
+  bottom: 5%;
+  opacity: 1;
+  color:#F90;
+}
+#effect-6 .img.hover .overlay .expandmedium {
+  bottom: 5%;
+  opacity: 1;
+  color:#F90;
+}
+#effect-6 .img.hover .overlay .expandsmall {
+  bottom: 5%;
+  opacity: 1;
+  color:#F90;
+}
+#effect-6 .img.hover .overlay .expand a{
+  color:#F90;
+}
+#effect-6 .img.hover .overlay .expandsmall a{
+  color:#F90;
+}
+#effect-6 .img.hover .overlay .expandmedium a{
+  color:#F90;
+}
+#effect-6 .img.hover .overlay a.expand {
+  bottom: 5%;
+  opacity: 1;
+  color:#F90;
+}
+
+.newscarousel{
+	font-size:13px;
+	color:#FFF;
+}
+
+
+
+
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* Media Queries
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+@media only screen and (max-width: 1100px) {
+  .effects {
+    padding-left: 5px;
+  }
+  .effects .img {
+    width: 50%;
+  }
+  .effects .img:nth-child(n) {
+    margin-right: 5px;
+  }
+  .effects .img:first-child {
+    margin-left: 0;
+  }
+  .effects .img:nth-child(2n-1) {
+    margin-left: -5px;
+  }
+  .effects .img:nth-child(2n) {
+    margin-right: 0;
+  }
+  .effects .img:last-child {
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .effects .img {
+    width: 100%;
+  }
+  .effects .img:nth-child(n) {
+    margin-right: 0;
+  }
+  .effects .img:first-child {
+    margin-left: 0;
+  }
+  .effects .img:nth-child(2n-1) {
+    margin-left: 0;
+  }
+  .effects .img:nth-child(2n) {
+    margin-right: 0;
+  }
+  .effects .img:last-child {
+    margin-right: 0;
+  }
+  .effects .img img {
+    margin: 0 auto;
+  }
+  #effect-6 {
+	  display:none;
+}
+}
